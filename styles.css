@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 1.5em;
+  background-color: beige;
+}
+
+/* Fixed Header on top with logo and nav bar. Nav bar includes Company name */
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px purple solid;
+  background-color: white;
+}
+
+#header-img {
+  height: 150px;
+  width: auto;
+  padding: 10px;
+}
+
+#nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#nav-bar ul {
+  display: flex;
+  align-items: flex-end;
+  list-style-type: none;
+  margin-right: 0px;
+  padding: 20px;
+  height: 150px;
+}
+
+#nav-bar li {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  min-width: 150px;
+}
+#nav-bar li a:link,
+#nav-bar li a:visited {
+  color: gray;
+  text-decoration: none;
+}
+
+#nav-bar li a:hover {
+  font-size: 1.2em;
+  color: purple;
+}
+
+#nav-bar h1 {
+  color: purple;
+  font-style: italic;
+}
+
+/* Main section */
+
+#main-section {
+  margin-top: 160px;
+}
+
+/* Intro section */
+
+#intro {
+  padding: 20px;
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#intro h1{
+  text-align: center;
+  padding: 20px;
+}
+
+p {
+  padding: 20px;
+  font-size: 1em;
+}
+
+/*  Video linked from YouTube */
+
+#video-box {
+  width: 100%;
+  padding: 20px;
+}
+
+#video {
+  width: 606px;
+  height: 335px;
+}
+
+
+@media (max-width: 680px){
+  #video {
+    width: 90%;
+  }
+}
+/* Features section */
+
+#features {
+  width: 40%;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+  border-top: 2px gray solid;
+  border-bottom: 1px gray solid;
+}
+
+#features ul {
+  text-align: center;
+  list-style: circle purple;
+  margin-top: 30px;
+}
+
+#features li {
+  text-align: left;
+  padding-left: 30px;
+  margin-left: 30px;
+}
+
+
+/* Princing tags */
+
+#pricing {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  column-gap: 2em;
+  justify-items: center;
+  margin-top: 60px;
+}
+
+.pricing-card {
+  margin: 10px;
+  padding: 0px;
+  border: 2px purple solid;
+  text-align: center;
+  border-radius: 5px;
+  max-width: 250px;
+    background-color: white;
+}
+
+.pricing-header {
+  color: purple;
+  border-bottom: 2px purple solid;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding: 20px 10px;
+  height: 100px;  
+}
+
+.price {
+  font-size: 1.5em;
+}
+
+.price p {
+  padding: 20px;
+}
+
+.price-desc {
+  height: 220px;
+}
+/* Form with email submit button */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 40px;
+}
+
+.btn {
+    background-color: purple;
+    border: 2px white solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    cursor: pointer;
+  transition-duration: 1s;
+}
+
+.btn:hover {
+  background-color: orange;
+  color: purple;
+  border: 2px purple solid;
+}
+
+
+
+@media (max-width: 800px){
+  #nav-bar {
+    flex-direction: column;
+     align-self: flex-end;
+  }
+  #nav-bar ul {
+    height: 70px;
+    align-self: flex-end;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 680px){
+  #header {
+    flex-direction: column;
+     align-self: flex-end;
+  }
+  #header-img {
+    display: none;
+  }
+  #nav-bar {
+    padding-top: 20px;
+  }
+  #nav-bar ul {
+    margin: 0 auto;
+  }  
+  #intro {
+    text-align: center;
+  }
+}
+  
